@@ -7,4 +7,5 @@ CORPORATE_URL = "/in/corporate"
 def test_corporate_url(page, app_config):
     page.goto(app_config.base_url + CORPORATE_URL)
     page_title = page.title()
+    print(" Page title : ", page_title)
     assert page_title == "Akbar Travels - Best Travel Website. Book Flights, Hotels, Holidays & more"
